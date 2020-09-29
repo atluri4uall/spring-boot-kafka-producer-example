@@ -19,7 +19,7 @@ agent any
                 bat 'mvn test'
                 }
             }
-        }
+        
 
 
         stage ('Deployment Stage') {
@@ -27,6 +27,6 @@ agent any
                bat 'mvn deploy'
                 }
             }
-        }
-    }
+        
+    
 }
