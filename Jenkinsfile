@@ -8,7 +8,7 @@ agent any
         stage ('Compile Stage') {
 
             steps {
-               bat 'mvn clean compile'
+               sh 'mvn clean compile'
                 }
             }
         
@@ -16,7 +16,7 @@ agent any
         stage ('Testing Stage') {
 
             steps {
-                bat 'mvn test'
+                sh 'mvn test'
                 }
             }
         
@@ -24,7 +24,7 @@ agent any
 
         stage ('Deployment Stage') {
             steps {
-               bat 'mvn deploy'
+               sh 'mvn deploy'
                 }
             }
         
