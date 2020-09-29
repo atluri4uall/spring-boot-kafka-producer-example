@@ -11,7 +11,7 @@ agent any
                bat 'mvn clean compile'
                 }
             }
-        }
+        
 
         stage ('Testing Stage') {
 
@@ -28,5 +28,8 @@ agent any
                 }
             }
         
+
+        
+    }
     
 }
