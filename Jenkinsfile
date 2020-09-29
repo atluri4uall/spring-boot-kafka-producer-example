@@ -22,11 +22,6 @@ agent any
         
 
 
-        stage ('Deployment Stage') {
-            steps {
-               sh 'mvn deploy'
-                }
-            }
         
 
         
